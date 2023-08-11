@@ -1,4 +1,17 @@
 const main = document.querySelector('main')
+const selectImg = document.querySelectorAll('section a img')
+
+let linksImg = [
+  '/icons/icon-github-pressed.svg',
+  '/icons/icon-codepen-pressed.svg',
+  '/icons/icon-ig-pressed.svg',
+]
+
+for (let i = 0; i < linksImg.length; i++) {
+  selectImg[i].addEventListener('click', () => {
+    selectImg[i].src = linksImg[i]
+  })
+}
 
 const keyboard = [
   {
@@ -99,13 +112,15 @@ window.addEventListener('keydown', (e) => {
       div.classList.toggle('scale-90')
     }
   }
-  // selectAudios.forEach((audio) => {
-  //   console.log(audio)
-  //   if (e.keyCode == audio.id) {
-  //     audio.play()
-  //     audio.currentTime = 0
-  //   } else {
-  //     console.log('nada')
-  //   }
-  // })
+  /*
+  selectAudios.forEach((audio) => {
+    console.log(audio)
+    if (e.keyCode == audio.id) {
+      audio.play()
+      audio.currentTime = 0
+    } else {
+      console.log('nada')
+    }
+  })
+  */
 })

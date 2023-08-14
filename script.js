@@ -2,7 +2,7 @@ const main = document.querySelector('main')
 const selectImg = document.querySelectorAll('section a img')
 
 let linksImg = [
-  'icons/icons-github-pressed.svg',
+  'icons/icon-github-pressed.svg',
   'icons/icon-codepen-pressed.svg',
   'icons/icon-ig-pressed.svg',
 ]
